@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
+
 import 'provider.dart';
 import 'manager.dart';
 
@@ -24,8 +26,10 @@ abstract class DependenciesRegistrar {
 
   DependenciesProvider get provider;
 
+  @visibleForTesting
   int get registeredInstancesNumber;
 
+  @visibleForTesting
   int get createdInstancesNumber;
 
   void dispose();

@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-
 import 'provider.dart';
 import 'registrar.dart';
 
@@ -66,11 +64,9 @@ class DependenciesManager
   }
 
   @override
-  @visibleForTesting
   int get registeredInstancesNumber => _factories.length;
 
   @override
-  @visibleForTesting
   int get createdInstancesNumber => _dependencies.length;
 
   @override
